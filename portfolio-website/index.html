@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="De persoonlijke portfolio-website van Ibrahim, student Software Developer.">
+    <title>Ibrahim | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#inhoud">Naar de inhoud</a>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Hoofdnavigatie">
+            <a class="brand" href="#top" aria-label="Terug naar het begin">Ibrahim<span>.</span></a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open het menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <a class="nav-link active" href="#over-mij" data-section="over-mij">Over mij</a>
+                <a class="nav-link" href="#vaardigheden" data-section="vaardigheden">Vaardigheden</a>
+                <a class="nav-link" href="projecten.html" data-section="projecten">Projecten</a>
+                <a class="nav-link" href="#contact" data-section="contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inhoud">
+        <section class="hero" id="top">
+            <div class="hero-grid container">
+                <div class="hero-copy">
+                    <p class="eyebrow">Software Developer in wording</p>
+                    <h1>Hallo, ik ben <span>Ibrahim.</span></h1>
+                    <p class="hero-text">Ik wil software developer worden omdat ik graag met code ideeën realiseer, problemen oplos en nieuwe technologieën leer.</p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="projecten.html">Bekijk projecten</a>
+                        <a class="button button-secondary" href="#contact">Neem contact op</a>
+                    </div>
+
+                    <ul class="hero-facts" aria-label="Persoonlijke kenmerken">
+                        <li>Passie voor ICT</li>
+                        <li>Altijd aan het leren</li>
+                        <li>Teamgericht</li>
+                    </ul>
+                </div>
+
+                <div class="portrait-wrap" aria-hidden="true">
+                    <div class="portrait">
+                        <span>IB</span>
+                    </div>
+                    <div class="portrait-label">
+                        <strong>Future Developer</strong>
+                        <span>Passie · Creativiteit · Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="over-mij">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Over mij</p>
+                    <h2>Nieuwsgierig naar hoe technologie werkt</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-copy">
+                        <p>Ik heb gekozen voor Software Development op ICT omdat ik benieuwd ben naar de logica én de creativiteit achter websites, apps en games.</p>
+                        <p>Programmeren is voor mij een manier om problemen te analyseren, oplossingen te bedenken en iets bruikbaars te maken. In mijn vrije tijd game ik, programmeer ik en speel ik voetbal.</p>
+                    </div>
+
+                    <aside class="interest-card" aria-label="Mijn interesses">
+                        <h3>Mijn interesses</h3>
+                        <ul>
+                            <li>Gamen</li>
+                            <li>Programmeren</li>
+                            <li>Voetbal</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-muted" id="vaardigheden">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Vaardigheden</p>
+                    <h2>Waar ik mee werk</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <span class="skill-number">01</span>
+                        <h3>HTML</h3>
+                        <p>Toegankelijke, semantische structuren voor websites.</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-number">02</span>
+                        <h3>CSS</h3>
+                        <p>Responsieve layouts met een moderne en consistente uitstraling.</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-number">03</span>
+                        <h3>JavaScript</h3>
+                        <p>Interactieve functionaliteit voor een prettige gebruikerservaring.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="contact-card container">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2>Laten we samen iets bouwen</h2>
+                    <p>Heb je een idee, opdracht of gewoon een vraag? Laat een bericht achter.</p>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-field">
+                        <label for="name">Naam</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Bericht</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button class="button button-primary" type="submit">Verstuur bericht</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <a class="brand" href="#top">Ibrahim<span>.</span></a>
+            <p>&copy; <span id="year"></span> Ibrahim. Gebouwd met HTML, CSS en JavaScript.</p>
+        </div>
+    </footer>
+</body>
+</html>

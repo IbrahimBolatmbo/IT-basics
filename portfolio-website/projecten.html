@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overzicht van de projecten van Ibrahim, student Software Developer.">
+    <title>Projecten | Ibrahim</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#inhoud">Naar de inhoud</a>
+
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Hoofdnavigatie">
+            <a class="brand" href="index.html" aria-label="Terug naar de homepage">Ibrahim<span>.</span></a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open het menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="nav-menu">
+                <a class="nav-link" href="index.html#over-mij" data-section="over-mij">Over mij</a>
+                <a class="nav-link" href="index.html#vaardigheden" data-section="vaardigheden">Vaardigheden</a>
+                <a class="nav-link active" href="#projecten" data-section="projecten">Projecten</a>
+                <a class="nav-link" href="index.html#contact" data-section="contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="inhoud">
+        <section class="section projects-page" id="projecten">
+            <div class="container">
+                <div class="page-intro">
+                    <p class="eyebrow">Projecten</p>
+                    <h1>Waar ik aan bouw</h1>
+                    <p class="page-lead">Een overzicht van mijn projecten: wat ik heb gemaakt, met welke technieken en wanneer ik eraan werkte.</p>
+                </div>
+
+                <div class="filter-bar" role="group" aria-label="Filter projecten op categorie">
+                    <button class="filter-button is-active" type="button" data-filter="alle" aria-pressed="true">Alle</button>
+                    <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Webontwikkeling</button>
+                    <button class="filter-button" type="button" data-filter="game" aria-pressed="false">Game development</button>
+                    <button class="filter-button" type="button" data-filter="app" aria-pressed="false">Webapplicatie</button>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" data-project-category="web">
+                        <div class="project-topline">
+                            <span>Webontwikkeling</span>
+                            <span>2026</span>
+                        </div>
+                        <h3>Persoonlijke portfolio</h3>
+                        <p>Een responsive website waarin mijn vaardigheden, interesses en projecten helder naar voren komen.</p>
+                        <ul class="project-tags" aria-label="Gebruikte technieken">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card" data-project-category="game">
+                        <div class="project-topline">
+                            <span>Game development</span>
+                            <span>2026</span>
+                        </div>
+                        <h3>Een eigen game</h3>
+                        <p>Een speelbare game met een eigen visie, waarin gameplay en techniek samenkomen.</p>
+                        <ul class="project-tags" aria-label="Gebruikte technieken">
+                            <li>JavaScript</li>
+                            <li>Canvas</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card" data-project-category="app">
+                        <div class="project-topline">
+                            <span>Webapplicatie</span>
+                            <span>2026</span>
+                        </div>
+                        <h3>Een handige ICT-tool</h3>
+                        <p>Een eenvoudige webtool die een praktisch probleem voor gebruikers eenvoudiger maakt.</p>
+                        <ul class="project-tags" aria-label="Gebruikte technieken">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <article class="project-card" data-project-category="web">
+                        <div class="project-topline">
+                            <span>Webontwikkeling</span>
+                            <span>2026</span>
+                        </div>
+                        <h3>Interactieve quiz</h3>
+                        <p>Een webquiz die vragen stelt, antwoorden direct nakijkt en de score bijhoudt.</p>
+                        <ul class="project-tags" aria-label="Gebruikte technieken">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <a class="brand" href="index.html">Ibrahim<span>.</span></a>
+            <p>&copy; <span id="year"></span> Ibrahim. Gebouwd met HTML, CSS en JavaScript.</p>
+        </div>
+    </footer>
+</body>
+</html>
